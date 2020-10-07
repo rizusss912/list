@@ -3,6 +3,15 @@
   text-decoration: none;
   color: inherit;
 }
+a{-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+a { color: #111; font-family: ‘Helvetica Neue’, sans-serif; font-weight: normal;letter-spacing: -1px; line-height: 1; }
+input[type=text] { color: #685206; font-family: ‘Helvetica Neue’, sans-serif; font-size: 16px; line-height: 24px; }
 input[type=text] {
     border:none;
     background:none;
@@ -26,14 +35,15 @@ input[type=text] {
   position: relative;
   width: 100%;
   height: 40px;
+
 }
 .list_head_input{
-  width: 92%;
   position: relative;
   display: block;
   box-sizing: border-box;
   height: 100%;
   margin-left: 10px;
+  width: calc(100% - 70px);
   }
 .input_style{
     position: relative;
@@ -80,10 +90,8 @@ input[type=text] {
   margin: 15px 0;
   background-color:#F0F0F0;
   transition: 0.1s;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,.1);
-
+  box-shadow: 0 4px 8px 0 rgba(50,50,50,.1);
   border-radius: 2px;
-  border: 3px solid #F0F0F0;
     box-sizing: border-box;
 }
 .element_input{
@@ -92,15 +100,15 @@ input[type=text] {
     margin-left: 10px;
     transform: translate(0%, -50%);
     top: 50%;
-    width: calc(100% - 40px);
+    width: calc(100% - 75px);
     height: 100%;
 }
 
 .detete_button{
     display: inline-block;
     position: absolute;
-    width: 21px;
-    height: 21px;
+    width: 20px;
+    height: 20px;
     transform: translate(0%, -50%);
     top: 50%;
     right: 5px;
@@ -119,8 +127,8 @@ input[type=text] {
 .edit_button{
     display: inline-block;
     position: absolute;
-    width: 21px;
-    height: 21px;
+    width: 20px;
+    height: 20px;
     transform: translate(0%, -50%);
     top: 50%;
     right: 35px;
